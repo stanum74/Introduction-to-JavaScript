@@ -18,7 +18,12 @@ Do the following:
    HINT: no function required
 */
 
-
+var votingAge;
+if (votingAge > 18) {
+    console.log(true);
+}else{
+    console.log(false);
+}
 
 /*
 Task 1b - Values
@@ -31,7 +36,10 @@ Do the following:
    HINT: no function required
 */
 
-
+var A = 0 ,B = 8;
+if (B===8){
+  A = 5
+}
 
 
 
@@ -45,10 +53,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
-
-
+var numbers = "1999"
+numbers.toString();
+console.log(numbers);
 /*
 Task 1d - Multiply
  
@@ -75,11 +82,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(a) {
+  return a * 7;
 }
-
-
+console.log(dogYears(12));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -108,9 +114,30 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function dogFeeder(age, weight) {
+  var poundsOfrawFood = 0;
+
+  if (age >= 1 && weight <= 5) {
+      var poundsOfrawFood = weight * 0.05; 
+  } else if (age >= 1 && weight >= 6 && weight <= 10) {
+      var poundsOfrawFood = weight * 0.04; 
+  } else if (age >= 1 && weight >= 11 && weight <= 15) {
+      var poundsOfrawFood = weight * 0.03; 
+  } else if (age >= 1 && weight >= 15) {
+      var poundsOfrawFood = weight * 0.02; 
+
+  } else if (age >= .16 && age <= .33) {
+      var poundsOfrawFood = weight * 0.1; 
+  } else if (age >= .33 && age <= .583) {
+      var poundsOfrawFood = weight * 0.05; 
+  } else if (age >= .583 && age <= .99) {
+      var poundsOfrawFood = weight * 0.04; 
   }
+
+  console.log(poundsOfrawFood);
+}
+
+dogFeeder(1, 15);
 
 
 
@@ -150,11 +177,14 @@ Using the miles function below do the following:
   1. Receive a number of kilometers
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
+  1KL = .6214 MILES
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(a){
+  return a * 0.6214
+}
+
+console.log(miles(8));
 
 
 
@@ -170,7 +200,10 @@ function feet(/*add your code here*/){
     /*add your code here*/
   }
  
-
+  function feet(a) {
+    return a * 30.48
+}
+console.log(feet(8))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -202,12 +235,25 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function gradeCalculator(marks){
+  if( marks >=90){
+    return "A"
+  }
+    else if ( marks >=80){
+    return "B"
+  }
+    else if ( marks >=70){
+    return "C"
+  }
+    else if ( marks >=60){
+    return "D"
+    }
+    else if ( marks >=0){
+      return "F"
+    }
   }
   
-  
-
+  console.log(gradeCalculator(55))
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
