@@ -194,16 +194,13 @@ Using the feet function below do the following:
   1. Receive a number of cm
   2. Convert the number of cm to feet
   3. Return number of feet
+  1 foot = 30.50 cm 
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(a){
+  return a * 30.5
   }
- 
-  function feet(a) {
-    return a * 30.48
-}
-console.log(feet(8))
+  console.log(feet(5))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
