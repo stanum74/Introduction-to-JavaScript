@@ -162,11 +162,26 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+function computerPlay() {
+  var String = ["Rock", "Paper", "Scissors"];
+  return String [Math.floor(Math.random() * String.length)];    
 }
-  
-  
+
+function game(userChoice) {
+  var computerChoice = computerPlay();
+  if (userChoice == "Rock" && computerChoice == "Scissors") {
+      console.log("You won!");
+}   else if (userChoice == "Paper" && computerChoice == "Rock") {
+      console.log("You won!");
+}   else if (userChoice == "Scissors" && computerChoice == "Paper") {
+      console.log("You won!");
+}    else if (userChoice == computerChoice) {
+      console.log("Draw!");
+}   else {
+      console.log("You lost!");
+}
+}
+game("Paper"); 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
